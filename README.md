@@ -1,5 +1,5 @@
 # Docker Project
-I don't want to install PHP on my local machine so this is the perfect use case for Docker! In this Quick Hit, I will describe how to create a containerized PHP + MySQL + PhPMyAdmin development environment using Docker Compose.
+I don't want to install PHP on my local machine so this is the perfect use case for Docker! In less than a minute, I will describe how to create a containerized PHP + MySQL + PhPMyAdmin development environment using Docker Compose.
 
 - On a single tap, your whole environment gets ready within a second with PHP + MySQL + phpMyadmin infrastructure.
 
