@@ -1,4 +1,6 @@
 # Docker Project
+I don't want to install PHP on my local machine so this is the perfect use case for Docker! In this Quick Hit, I will describe how to create a containerized PHP + MySQL + PhPMyAdmin development environment using Docker Compose.
+
 I have build this infrastructure in RHEL 8. In this project, there will be 3 docker containers running 
 1. MySQL : 5.7
 2. PHP : 7.2
@@ -28,6 +30,9 @@ Get ready with the following stuff before diving into docker-compose.yml file.
     - simply you can run this command ``` yum install php ``` in rhel 8 terminal.
     
 ## Running the docker-compose :
+
+Docker-Compose allows you to build multi-container web applications. It's the perfect tool to set up a local development environment that replicates your production setup.
+
 Create a directory and paste the given ``` docker-compose.yml ``` file into the directory. In the Terminal, head to the directory using ``` cd directory_name ``` and run:
 
 ``` docker-compose up -d ```
@@ -35,18 +40,6 @@ Create a directory and paste the given ``` docker-compose.yml ``` file into the 
 ❗ Here `-d` is an option to run docker in background. You can omit it if not required. ❗
 
 ## Initial Setup :
-
-- Go to browser and enter the link: ```http://ip_address:80```. You need to enter ```ip_address``` of ```PHPMyAdmin``` docker container. To do this enter `docker inspect docker_id` where you will find ip_address of container. After entering ip_address with port number in the browser you will be directed to PHPMyAdmin page.
-
-![screenshot](https://github.com/Sumitkaroo/Docker/blob/master/images/2.JPG)
-
-![screenshot](https://github.com/Sumitkaroo/Docker/blob/master/images/1.JPG)
-
-🛑 Note: It is highly recommended to edit the `docker-compose.yml` file and use your own personalised login and password. 🛑
-
-- Finally, you will be redirected to the home page of PHPMyAdmin as in the below image :
-
-![screenshot](https://github.com/Sumitkaroo/Docker/blob/master/images/3.JPG)
 
 ## Connecting to the database remotely from host :
 
@@ -64,9 +57,34 @@ Create a directory and paste the given ``` docker-compose.yml ``` file into the 
 
 ## Deploying PHP Webpages :
 
- - Create another subdirectory where you have created `docker-compose.yml` file and named as `/php` which contains the following `index.php` file:
+All the webpages of your web application, you can import here `/php`.
 
+ - Create another subdirectory where you have created `docker-compose.yml` file and named as `/php` which contains the following `index.php` file:
+ 
 ![screenshot](https://github.com/Sumitkaroo/Docker/blob/master/images/5.JPG)
+
+![screenshot](https://github.com/Sumitkaroo/Docker/blob/master/images/6.JPG)
+
+- For accessing Webpages
+
+  - Go to browser and enter the link: `http://0.0.0.0:80` or `http:ip_address of PHP Container:80`. You will be directed to `index.php`.
+
+![screenshot](https://github.com/Sumitkaroo/Docker/blob/master/images/7.JPG)
+
+
+## PHPMyAdmin
+- Go to browser and enter the link: ```http://ip_address:80```. You need to enter ```ip_address``` of ```PHPMyAdmin``` docker container. To do this enter `docker inspect docker_id` where you will find ip_address of container. After entering ip_address with port number in the browser you will be directed to PHPMyAdmin page.
+
+![screenshot](https://github.com/Sumitkaroo/Docker/blob/master/images/2.JPG)
+
+![screenshot](https://github.com/Sumitkaroo/Docker/blob/master/images/1.JPG)
+
+🛑 Note: It is highly recommended to edit the `docker-compose.yml` file and use your own personalised login and password. 🛑
+
+- Finally, you will be redirected to the home page of PHPMyAdmin as in the below image :
+
+![screenshot](https://github.com/Sumitkaroo/Docker/blob/master/images/3.JPG)
+
 
 ## Author :
 
