@@ -1,7 +1,19 @@
 # Docker Project
 I don't want to install PHP on my local machine so this is the perfect use case for Docker! In this Quick Hit, I will describe how to create a containerized PHP + MySQL + PhPMyAdmin development environment using Docker Compose.
 
-On a single tap, your whole environment gets 
+- On a single tap, your whole environment gets ready within a second with PHP + MySQL + phpMyadmin infrastructure.
+
+- There are important security considerations when using software like phpMyAdmin, since it:
+   - Communicates directly with your MySQL installation
+   - Handles authentication using MySQL credentials
+   - Executes and returns results for arbitrary SQL queries
+
+- For these reasons, and because it is a widely-deployed PHP application that is frequently targeted for attack, we should never run phpMyAdmin on remote systems over a plain HTTP connection. We should have our domain configured with an SSL/TLS certificate.
+
+- Even if your web application/website server gets down or broken, with the help of docker-compose we can build the entire infrastructure in less than a minute without losing any data.
+
+## Getting Started
+Get ready with the following stuff before diving into docker-compose.yml file.
 
 I have build this infrastructure in RHEL 8. In this project, there will be 3 docker containers running 
 1. MySQL : 5.7
@@ -9,9 +21,6 @@ I have build this infrastructure in RHEL 8. In this project, there will be 3 doc
 3. phpMyAdmin
 
 phpMyAdmin was created so that users can interact with MySQL through a web interface.
-
-## Getting Started
-Get ready with the following stuff before diving into docker-compose.yml file.
 
 ```bash
 .
