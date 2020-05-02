@@ -42,4 +42,9 @@ Create a directory and paste the given ``` docker-compose.yml ``` file into the 
 
 ![screenshot](https://github.com/Sumitkaroo/Docker/blob/master/images/1.JPG)
 
-🛑 Note: The above screenshot consisting login credentials is just a sample. It is highly recommended to edit the `docker-compose.yml` file and use your own personalised login and password. 🛑
+🛑 Note: It is highly recommended to edit the `docker-compose.yml` file and use your own personalised login and password. 🛑
+
+- Finally, you will be redirected to the home page of PHPMyAdmin as in the below image :
+
+![screenshot](https://github.com/Sumitkaroo/Docker/blob/master/images/3.JPG)
+
