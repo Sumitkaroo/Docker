@@ -1,7 +1,7 @@
 # Docker Project
 I have build this infrastructure in RHEL 8. In this project, there will be 3 docker containers running 
-1. MySQL:5.7
-2. PHP:7.2
+1. MySQL : 5.7
+2. PHP : 7.2
 3. PHPMyAdmin
 
 phpMyAdmin was created so that users can interact with MySQL through a web interface.
@@ -36,10 +36,8 @@ Create a directory and paste the given ``` docker-compose.yml ``` file into the 
 
 ## Initial Setup :
 
-- Go to browser and enter the link: `http://0.0.0.0:8080` or `http://ServerName:8080`. You will be directed to owncloud-web-server.
+- Go to browser and enter the link: ```http://ip_address:80```. You need to enter ```ip_address``` of ```PHPMyAdmin``` docker container. To do this enter `docker inspect docker_id` where you will find ip_address of container. After entering ip_address with port number in the browser you will be directed to PHPMyAdmin page.
 
-- Enter the credentials as in the below screenshot :
-
-![screenshot](https://github.com/asks1012/Docker-Project/blob/master/Screenshot%20(140).png)
+![screenshot](https://github.com/Sumitkaroo/Docker/blob/master/images/1.JPG)
 
 🛑 Note: The above screenshot consisting login credentials is just a sample. It is highly recommended to edit the `docker-compose.yml` file and use your own personalised login and password. 🛑
