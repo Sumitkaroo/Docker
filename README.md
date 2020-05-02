@@ -48,3 +48,19 @@ Create a directory and paste the given ``` docker-compose.yml ``` file into the 
 
 ![screenshot](https://github.com/Sumitkaroo/Docker/blob/master/images/3.JPG)
 
+## Connecting to the database remotely from host :
+
+- Run the following and find the IP address of MySQL container:
+
+  > docker inspect `CONTAINER ID of MySQL`
+  
+- Run the following to connect to the MySQL database :
+  > mysql -h `IP of MySQL` -u `username of MySQLdb` -p`password of MySQLdb`
+  
+![screenshot](https://github.com/Sumitkaroo/Docker/blob/master/images/4.JPG)
+
+
+- If your MySQL is correctly working, you will be redirected to `MySQL shell` and you can run commands like `show databases;`, `show tables;`, etc.
+
+
+
