@@ -59,8 +59,20 @@ Create a directory and paste the given ``` docker-compose.yml ``` file into the 
   
 ![screenshot](https://github.com/Sumitkaroo/Docker/blob/master/images/4.JPG)
 
-
+ 
 - If your MySQL is correctly working, you will be redirected to `MySQL shell` and you can run commands like `show databases;`, `show tables;`, etc.
 
+## Deploying PHP Webpages :
 
+ - Create another subdirectory where you have created `docker-compose.yml` file and named as `/php` which contains the following `index.php` file:
+
+![screenshot](https://github.com/Sumitkaroo/Docker/blob/master/images/5.JPG)
+
+## Author :
+
+  > Sumit Karoo
+  
+  > Gmail: sumitkaroo6699@gmail.com
+  
+  > https://www.linkedin.com/in/sumit-karoo-268707185/
 
