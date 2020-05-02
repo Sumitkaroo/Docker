@@ -6,7 +6,7 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: pass
       MYSQL_DATABASE: db
-      MYSQL_USER: root
+      MYSQL_USER: boss
       MYSQL_PASSWORD: pass
     ports:
     - "9906:3306"
