@@ -1,10 +1,12 @@
 # Docker Project
 I don't want to install PHP on my local machine so this is the perfect use case for Docker! In this Quick Hit, I will describe how to create a containerized PHP + MySQL + PhPMyAdmin development environment using Docker Compose.
 
+On a single tap, your whole environment gets 
+
 I have build this infrastructure in RHEL 8. In this project, there will be 3 docker containers running 
 1. MySQL : 5.7
 2. PHP : 7.2
-3. PHPMyAdmin
+3. phpMyAdmin
 
 phpMyAdmin was created so that users can interact with MySQL through a web interface.
 
@@ -84,8 +86,11 @@ Notes:
 - Our local directory, ./php, is mounted inside of the webserver container as /var/www/html/
     - The files within in our local folder will be served when we access the website inside of the container.
 
-## PHPMyAdmin
-- Go to browser and enter the link: ```http://ip_address:80```. You need to enter ```ip_address``` of ```PHPMyAdmin``` docker container. To do this enter `docker inspect docker_id` where you will find ip_address of container. After entering ip_address with port number in the browser you will be directed to `PHPMyAdmin` page.
+## phpMyAdmin
+
+- phpMyAdmin was created so that users can interact with MySQL through a web interface. 
+
+- Go to browser and enter the link: ```http://ip_address:80```. You need to enter ```ip_address``` of ```phpMyAdmin``` docker container. To do this enter `docker inspect docker_id` where you will find ip_address of container. After entering ip_address with port number in the browser you will be directed to `phpMyAdmin` page.
 
 ![screenshot](https://github.com/Sumitkaroo/Docker/blob/master/images/2.JPG)
 
@@ -93,7 +98,7 @@ Notes:
 
 🛑 Note: It is highly recommended to edit the `docker-compose.yml` file and use your own personalised login and password. 🛑
 
-- Finally, you will be redirected to the home page of PHPMyAdmin as in the below image :
+- Finally, you will be redirected to the home page of phpMyAdmin as in the below image :
 
 ![screenshot](https://github.com/Sumitkaroo/Docker/blob/master/images/3.JPG)
 
