@@ -49,15 +49,14 @@ Create a directory and paste the given ``` docker-compose.yml ``` file into the 
   
 - Run the following to connect to the MySQL database :
   > mysql -h `IP of MySQL` -u `username of MySQLdb` -p`password of MySQLdb`
-  
-![screenshot](https://github.com/Sumitkaroo/Docker/blob/master/images/4.JPG)
-
  
 - If your MySQL is correctly working, you will be redirected to `MySQL shell` and you can run commands like `show databases;`, `show tables;`, etc.
 
+![screenshot](https://github.com/Sumitkaroo/Docker/blob/master/images/4.JPG)
+
 ## Deploying PHP Webpages :
 
-All the webpages of your web application, you can import here `/php`.
+All the webpages of your web application you can import here `/php`.
 
  - Create another subdirectory where you have created `docker-compose.yml` file and named as `/php` which contains the following `index.php` file:
  
@@ -67,13 +66,14 @@ All the webpages of your web application, you can import here `/php`.
 
 - For accessing Webpages
 
-  - Go to browser and enter the link: `http://0.0.0.0:80` or `http:ip_address of PHP Container:80`. You will be directed to `index.php`.
+  - Go to browser and enter the link: `http://0.0.0.0:80` or `http:ip_address of PHP Container:80`.
+To find the `ip_address` of container type `docker inspect docker_id` in terminal where you will find `ip_address` of the container. After entering `ip_address` with `port_number` in the browser you will be directed to `index.php` page.
 
 ![screenshot](https://github.com/Sumitkaroo/Docker/blob/master/images/7.JPG)
 
 
 ## PHPMyAdmin
-- Go to browser and enter the link: ```http://ip_address:80```. You need to enter ```ip_address``` of ```PHPMyAdmin``` docker container. To do this enter `docker inspect docker_id` where you will find ip_address of container. After entering ip_address with port number in the browser you will be directed to PHPMyAdmin page.
+- Go to browser and enter the link: ```http://ip_address:80```. You need to enter ```ip_address``` of ```PHPMyAdmin``` docker container. To do this enter `docker inspect docker_id` where you will find ip_address of container. After entering ip_address with port number in the browser you will be directed to `PHPMyAdmin` page.
 
 ![screenshot](https://github.com/Sumitkaroo/Docker/blob/master/images/2.JPG)
 
