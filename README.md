@@ -82,7 +82,7 @@ Notes:
 - We use port-forwarding to connect to the inside of containers from our local machine.
 
 - Our local directory, ./php, is mounted inside of the webserver container as /var/www/html/
-    - The files within in our local folder will be served when we access the website inside of the container
+    - The files within in our local folder will be served when we access the website inside of the container.
 
 ## PHPMyAdmin
 - Go to browser and enter the link: ```http://ip_address:80```. You need to enter ```ip_address``` of ```PHPMyAdmin``` docker container. To do this enter `docker inspect docker_id` where you will find ip_address of container. After entering ip_address with port number in the browser you will be directed to `PHPMyAdmin` page.
